@@ -1,33 +1,97 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff;
-}
+/* styles.css */
 
-.container {
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 50px;
 }
 
 h1 {
     font-size: 3em;
-    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.message {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    animation: slideIn 3s ease-in-out;
 }
 
 .from {
-    font-size: 1.2em;
+    font-size: 1em;
     font-style: italic;
+    margin-top: 40px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #ff7e5f;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    display: inline-block;
+    max-width: 800px;
+    animation: grow 1s ease-in-out;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.quote {
+    font-size: 1em;
+    font-style: italic;
+    margin: 10px 0;
+    animation: fadeIn 4s ease-in-out;
 }
