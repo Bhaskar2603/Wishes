@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.from {
+    font-size: 1.2em;
+    font-style: italic;
+}
